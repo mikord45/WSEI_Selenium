@@ -13,6 +13,7 @@ namespace SeleniumCSharpTutorials.Utilities
     {
         private object lockObject = new object();
         public IWebDriver driver;
+
         public IWebDriver Init()
         {
             lock (lockObject)
