@@ -5,16 +5,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace SeleniumCSharpTutorials.Utilities
 {
     public class BrowserUtility
     {
-        public IWebDriver Init(IWebDriver driver)
+        private object lockObject = new object();
+        public IWebDriver driver;
+        public IWebDriver Init()
         {
-            driver = new ChromeDriver();
+            lock (lockObject)
+            {
+                driver = new ChromeDriver();
+            }
             driver.Manage().Window.Maximize();
             driver.Url = "https://www.facebook.com/";
+
             return driver;
         }
     }

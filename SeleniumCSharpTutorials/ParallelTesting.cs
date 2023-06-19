@@ -18,12 +18,12 @@ namespace SeleniumCSharpTutorials
     [TestFixture]
     public class ParallelTesting
     {
-        IWebDriver driver;
+        BrowserUtility browser = new BrowserUtility();
 
         [Test,Category("UAT Testing"),Category("Module1")]
         public void TestMethod1()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -32,7 +32,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod2()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -41,7 +41,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod3()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -50,7 +50,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod4()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -59,7 +59,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod5()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -68,7 +68,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod6()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -77,7 +77,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod7()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -86,7 +86,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod8()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -95,7 +95,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod9()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
@@ -104,7 +104,7 @@ namespace SeleniumCSharpTutorials
         [Test, Category("UAT Testing"), Category("Module1")]
         public void TestMethod10()
         {
-            var Driver = new BrowserUtility().Init(driver);
+            var Driver = browser.Init();
             IWebElement emailTextField = Driver.FindElement(By.XPath(".//*[@id='email']"));
             emailTextField.SendKeys("Selenium C#");
             Driver.Close();
